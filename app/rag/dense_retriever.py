@@ -30,7 +30,7 @@ def build_dense_index(
 
     return vector_store
 
-@lru_cache(maxsize=1)
+'''@lru_cache(maxsize=1)
 def load_dense_index() -> Chroma:
     embedding_model = get_embedding_model()
 
@@ -38,7 +38,40 @@ def load_dense_index() -> Chroma:
         collection_name=COLLECTION_NAME,
         embedding_function=embedding_model,
         persist_directory=str(CHROMA_PATH),
+    )'''
+
+@lru_cache(maxsize=1)
+def load_dense_index() -> Chroma:
+    embedding_model = get_embedding_model()
+
+    vector_store = Chroma(
+        collection_name=COLLECTION_NAME,
+        embedding_function=embedding_model,
+        persist_directory=str(CHROMA_PATH),
     )
+
+    existing_data = vector_store.get(
+        limit=1
+    )
+
+    if not existing_data.get("ids"):
+        print(
+            "No policy index found. "
+            "Building Chroma index..."
+        )
+
+        chunks = chunk_policy()
+
+        vector_store.add_documents(
+            chunks
+        )
+
+        print(
+            f"Created policy index with "
+            f"{len(chunks)} chunks."
+        )
+
+    return vector_store
 
 
 def dense_search(
