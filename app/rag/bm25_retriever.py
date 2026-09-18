@@ -1,4 +1,5 @@
 import re
+from functools import lru_cache
 
 from rank_bm25 import BM25Okapi
 
@@ -53,3 +54,8 @@ class BM25Retriever:
             )
 
         return results
+
+
+@lru_cache(maxsize=1)
+def get_bm25_retriever() -> BM25Retriever:
+    return BM25Retriever()

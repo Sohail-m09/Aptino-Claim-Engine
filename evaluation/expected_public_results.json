@@ -1,0 +1,106 @@
+[
+  {
+    "case_id": "PUB-001",
+    "expected_decision": "ADMISSIBLE_WITH_LIMITS",
+    "expected_topics": [
+      "hospitalization",
+      "room rent",
+      "doctor fees",
+      "medicines diagnostics",
+      "ambulance"
+    ]
+  },
+  {
+    "case_id": "PUB-002",
+    "expected_decision": "NOT_ADMISSIBLE",
+    "expected_topics": [
+      "30 days waiting period"
+    ]
+  },
+  {
+    "case_id": "PUB-003",
+    "expected_decision": "NOT_ADMISSIBLE",
+    "expected_topics": [
+      "pre-existing diseases",
+      "48 months continuous coverage"
+    ]
+  },
+  {
+    "case_id": "PUB-004",
+    "expected_decision": "ADMISSIBLE_WITH_LIMITS",
+    "expected_topics": [
+      "domiciliary treatment",
+      "20% of basic sum insured"
+    ]
+  },
+  {
+    "case_id": "PUB-005",
+    "expected_decision": "ADMISSIBLE",
+    "expected_topics": [
+      "day care",
+      "eye surgery",
+      "first year waiting period"
+    ]
+  },
+  {
+    "case_id": "PUB-006",
+    "expected_decision": "NEEDS_REVIEW",
+    "expected_topics": [
+      "hospital definition",
+      "medical necessity"
+    ]
+  },
+  {
+    "case_id": "PUB-007",
+    "expected_decision": "ADMISSIBLE_WITH_LIMITS",
+    "expected_topics": [
+      "room rent",
+      "doctor fees",
+      "medicines diagnostics",
+      "ambulance"
+    ]
+  },
+  {
+    "case_id": "PUB-008",
+    "expected_decision": "NOT_ADMISSIBLE",
+    "expected_topics": [
+      "cosmetic",
+      "aesthetic treatment"
+    ]
+  },
+  {
+    "case_id": "PUB-009",
+    "expected_decision": "ADMISSIBLE",
+    "expected_topics": [
+      "pre-hospitalisation",
+      "post-hospitalisation",
+      "30 days",
+      "60 days"
+    ]
+  },
+  {
+    "case_id": "PUB-010",
+    "expected_decision": "ADMISSIBLE",
+    "expected_topics": [
+      "continuous prior coverage",
+      "waiting period reduction",
+      "cataract",
+      "eye surgery"
+    ]
+  },
+  {
+    "case_id": "PUB-011",
+    "expected_decision": "NEEDS_REVIEW",
+    "expected_topics": [
+      "hospital definition"
+    ]
+  },
+  {
+    "case_id": "PUB-012",
+    "expected_decision": "NOT_ADMISSIBLE",
+    "expected_topics": [
+      "experimental",
+      "unproven treatment"
+    ]
+  }
+]

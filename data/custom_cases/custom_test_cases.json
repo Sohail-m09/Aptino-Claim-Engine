@@ -1,0 +1,224 @@
+[
+  {
+    "case_id": "CUSTOM-001",
+    "policy_id": "TEST-POLICY-001",
+    "policy_start_date": "2024-01-01",
+    "claim_date": "2025-03-15",
+    "sum_insured_inr": 500000,
+    "continuous_coverage_months": 14,
+    "prior_insurer_continuous_years": 0,
+    "patient": {
+      "age": 32
+    },
+    "hospital": {
+      "name": "City Care Hospital",
+      "network_provider": true
+    },
+    "treatment": {
+      "type": "inpatient",
+      "admission_hours": 48,
+      "diagnosis": "Acute infection",
+      "procedure": "Medical management",
+      "pre_existing": false,
+      "experimental": false,
+      "patient_cannot_be_moved": null,
+      "hospital_room_unavailable": null
+    },
+    "expenses_inr": {
+      "room": 9000,
+      "doctor_fees": 20000,
+      "medicines_diagnostics": 15000,
+      "pre_hospitalization": 0,
+      "post_hospitalization": 0,
+      "ambulance": 800
+    },
+    "documents": [
+      "discharge_summary",
+      "hospital_bills",
+      "medical_records"
+    ],
+    "task": "Determine whether this standard inpatient hospitalization is covered and whether any financial limits affect the claim.",
+    "evidence_context": {
+      "hospital_registered": true,
+      "hospital_minimum_criteria_documented": true,
+      "medical_necessity_confirmed": true
+    }
+  },
+  {
+    "case_id": "CUSTOM-002",
+    "policy_id": "TEST-POLICY-002",
+    "policy_start_date": "2024-01-01",
+    "claim_date": "2025-05-10",
+    "sum_insured_inr": 500000,
+    "continuous_coverage_months": 16,
+    "prior_insurer_continuous_years": 0,
+    "patient": {
+      "age": 45
+    },
+    "hospital": {
+      "name": "Metro Multispeciality Hospital",
+      "network_provider": true
+    },
+    "treatment": {
+      "type": "inpatient",
+      "admission_hours": 48,
+      "diagnosis": "Acute illness",
+      "procedure": "Inpatient treatment",
+      "pre_existing": false,
+      "experimental": false,
+      "patient_cannot_be_moved": null,
+      "hospital_room_unavailable": null
+    },
+    "expenses_inr": {
+      "room": 18000,
+      "doctor_fees": 30000,
+      "medicines_diagnostics": 25000,
+      "pre_hospitalization": 0,
+      "post_hospitalization": 0,
+      "ambulance": 1800
+    },
+    "documents": [
+      "discharge_summary",
+      "hospital_bills",
+      "ambulance_bill"
+    ],
+    "task": "Determine coverage and apply the policy's room-rent and ambulance limits.",
+    "evidence_context": {
+      "hospital_registered": true,
+      "hospital_minimum_criteria_documented": true,
+      "medical_necessity_confirmed": true
+    }
+  },
+  {
+    "case_id": "CUSTOM-003",
+    "policy_id": "TEST-POLICY-003",
+    "policy_start_date": "2024-01-01",
+    "claim_date": "2025-04-01",
+    "sum_insured_inr": 500000,
+    "continuous_coverage_months": 15,
+    "prior_insurer_continuous_years": 0,
+    "patient": {
+      "age": 37
+    },
+    "hospital": {
+      "name": "Unknown Local Hospital",
+      "network_provider": null
+    },
+    "treatment": {
+      "type": "inpatient",
+      "admission_hours": 72,
+      "diagnosis": "Acute infection",
+      "procedure": "Medical management",
+      "pre_existing": false,
+      "experimental": false,
+      "patient_cannot_be_moved": null,
+      "hospital_room_unavailable": null
+    },
+    "expenses_inr": {
+      "room": 12000,
+      "doctor_fees": 18000,
+      "medicines_diagnostics": 12000,
+      "pre_hospitalization": 0,
+      "post_hospitalization": 0,
+      "ambulance": 0
+    },
+    "documents": [
+      "hospital_bills",
+      "discharge_summary"
+    ],
+    "task": "Determine whether the claim can be safely decided when hospital qualification cannot be established.",
+    "evidence_context": {
+      "hospital_registered": null,
+      "hospital_minimum_criteria_documented": null,
+      "medical_necessity_confirmed": true
+    }
+  },
+  {
+    "case_id": "CUSTOM-004",
+    "policy_id": "TEST-POLICY-004",
+    "policy_start_date": "2024-01-01",
+    "claim_date": "2025-06-10",
+    "sum_insured_inr": 400000,
+    "continuous_coverage_months": 17,
+    "prior_insurer_continuous_years": 0,
+    "patient": {
+      "age": 29
+    },
+    "hospital": {
+      "name": "Sunrise Hospital",
+      "network_provider": true
+    },
+    "treatment": {
+      "type": "inpatient",
+      "admission_hours": 48,
+      "diagnosis": "Acute abdominal pain",
+      "procedure": "Observation and treatment",
+      "pre_existing": false,
+      "experimental": false,
+      "patient_cannot_be_moved": null,
+      "hospital_room_unavailable": null
+    },
+    "expenses_inr": {
+      "room": 7000,
+      "doctor_fees": 12000,
+      "medicines_diagnostics": 9000,
+      "pre_hospitalization": 0,
+      "post_hospitalization": 0,
+      "ambulance": 0
+    },
+    "documents": [
+      "hospital_bill",
+      "discharge_summary"
+    ],
+    "task": "Determine whether a safe coverage decision can be made when medical necessity is not confirmed.",
+    "evidence_context": {
+      "hospital_registered": true,
+      "hospital_minimum_criteria_documented": true,
+      "medical_necessity_confirmed": null
+    }
+  },
+  {
+    "case_id": "CUSTOM-005",
+    "policy_id": "TEST-POLICY-005",
+    "policy_start_date": "2023-01-01",
+    "claim_date": "2025-07-20",
+    "sum_insured_inr": 500000,
+    "continuous_coverage_months": 30,
+    "prior_insurer_continuous_years": 0,
+    "patient": {
+      "age": 41
+    },
+    "hospital": {
+      "name": "Advanced Therapy Hospital",
+      "network_provider": true
+    },
+    "treatment": {
+      "type": "inpatient",
+      "admission_hours": 72,
+      "diagnosis": "Chronic condition",
+      "procedure": "Experimental therapy",
+      "pre_existing": false,
+      "experimental": true,
+      "patient_cannot_be_moved": null,
+      "hospital_room_unavailable": null
+    },
+    "expenses_inr": {
+      "room": 10000,
+      "doctor_fees": 30000,
+      "medicines_diagnostics": 40000,
+      "pre_hospitalization": 0,
+      "post_hospitalization": 0,
+      "ambulance": 0
+    },
+    "documents": [
+      "hospital_bill",
+      "treatment_records"
+    ],
+    "task": "Determine whether the experimental treatment is covered under the policy.",
+    "evidence_context": {
+      "hospital_registered": true,
+      "hospital_minimum_criteria_documented": true,
+      "medical_necessity_confirmed": true
+    }
+  }
+]

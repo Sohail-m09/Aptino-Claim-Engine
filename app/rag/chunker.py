@@ -1,8 +1,6 @@
 import re
-
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-
 from app.rag.loader import load_policy
 
 

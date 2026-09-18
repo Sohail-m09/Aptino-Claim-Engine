@@ -1,4 +1,4 @@
-from app.rag.bm25_retriever import BM25Retriever
+from app.rag.bm25_retriever import get_bm25_retriever
 from app.rag.dense_retriever import dense_search
 from app.rag.reranker import rerank_results
 
@@ -55,7 +55,7 @@ def hybrid_search(
         k=dense_k,
     )
 
-    bm25_retriever = BM25Retriever()
+    bm25_retriever = get_bm25_retriever()
 
     bm25_results = bm25_retriever.search(
         query=query,

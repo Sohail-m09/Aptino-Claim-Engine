@@ -1,0 +1,22 @@
+[
+  {
+    "case_id": "CUSTOM-001",
+    "expected_decision": "ADMISSIBLE"
+  },
+  {
+    "case_id": "CUSTOM-002",
+    "expected_decision": "ADMISSIBLE_WITH_LIMITS"
+  },
+  {
+    "case_id": "CUSTOM-003",
+    "expected_decision": "NEEDS_REVIEW"
+  },
+  {
+    "case_id": "CUSTOM-004",
+    "expected_decision": "NEEDS_REVIEW"
+  },
+  {
+    "case_id": "CUSTOM-005",
+    "expected_decision": "NOT_ADMISSIBLE"
+  }
+]

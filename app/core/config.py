@@ -4,7 +4,13 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
     gemini_api_key: str
 
-    model_name: str = "gemini-3.1-flash-lite"
+    model_name: str = (
+        "gemini-3.5-flash-lite"
+    )
+
+    api_base_url: str = (
+        "http://127.0.0.1:8000"
+    )
 
     model_config = SettingsConfigDict(
         env_file=".env",

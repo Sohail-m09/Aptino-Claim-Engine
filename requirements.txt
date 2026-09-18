@@ -13,7 +13,13 @@ sentence-transformers
 chromadb
 
 pypdf
+pytest
 
 rank-bm25
 
 flashrank
+
+fastapi
+uvicorn
+
+streamlit

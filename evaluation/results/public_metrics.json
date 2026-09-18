@@ -1,0 +1,9 @@
+{
+  "total_public_cases": 12,
+  "decision_accuracy": 1.0,
+  "validation_pass_rate": 0.9167,
+  "citation_coverage_rate": 1.0,
+  "abstention_accuracy": 1.0,
+  "cases_using_revision": 1,
+  "average_citations_per_case": 2.33
+}

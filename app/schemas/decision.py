@@ -75,3 +75,21 @@ class FinalDecision(BaseModel):
     validation: ValidationResult
 
     trace: list[TraceStep] = Field(default_factory=list)
+
+class DecisionDraft(BaseModel):
+    case_id: str
+
+    decision: DecisionStatus
+
+    confidence: float = Field(
+        ge=0,
+        le=1,
+    )
+
+    key_findings: list[str] = Field(
+        default_factory=list
+    )
+
+    missing_evidence: list[str] = Field(
+        default_factory=list
+    )

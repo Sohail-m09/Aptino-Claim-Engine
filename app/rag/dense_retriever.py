@@ -1,10 +1,9 @@
 from pathlib import Path
 import shutil
-
 from langchain_chroma import Chroma
-
 from app.rag.chunker import chunk_policy
 from app.rag.embeddings import get_embedding_model
+from functools import lru_cache
 
 
 CHROMA_PATH = Path("chroma_db")
@@ -31,7 +30,7 @@ def build_dense_index(
 
     return vector_store
 
-
+@lru_cache(maxsize=1)
 def load_dense_index() -> Chroma:
     embedding_model = get_embedding_model()
 

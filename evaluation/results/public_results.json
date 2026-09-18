@@ -1,0 +1,148 @@
+{
+  "summary": {
+    "total_cases": 12,
+    "correct_cases": 12,
+    "decision_accuracy": 1.0
+  },
+  "cases": [
+    {
+      "case_id": "PUB-001",
+      "expected_decision": "ADMISSIBLE_WITH_LIMITS",
+      "predicted_decision": "ADMISSIBLE_WITH_LIMITS",
+      "correct": true,
+      "confidence": 1.0,
+      "validation_status": "PASS",
+      "citation_count": 5,
+      "revision_count": 0,
+      "missing_evidence": []
+    },
+    {
+      "case_id": "PUB-002",
+      "expected_decision": "NOT_ADMISSIBLE",
+      "predicted_decision": "NOT_ADMISSIBLE",
+      "correct": true,
+      "confidence": 1.0,
+      "validation_status": "PASS",
+      "citation_count": 1,
+      "revision_count": 0,
+      "missing_evidence": []
+    },
+    {
+      "case_id": "PUB-003",
+      "expected_decision": "NOT_ADMISSIBLE",
+      "predicted_decision": "NOT_ADMISSIBLE",
+      "correct": true,
+      "confidence": 1.0,
+      "validation_status": "PASS",
+      "citation_count": 1,
+      "revision_count": 0,
+      "missing_evidence": []
+    },
+    {
+      "case_id": "PUB-004",
+      "expected_decision": "ADMISSIBLE_WITH_LIMITS",
+      "predicted_decision": "ADMISSIBLE_WITH_LIMITS",
+      "correct": true,
+      "confidence": 0.95,
+      "validation_status": "PASS",
+      "citation_count": 2,
+      "revision_count": 0,
+      "missing_evidence": []
+    },
+    {
+      "case_id": "PUB-005",
+      "expected_decision": "ADMISSIBLE",
+      "predicted_decision": "ADMISSIBLE",
+      "correct": true,
+      "confidence": 1.0,
+      "validation_status": "PASS",
+      "citation_count": 1,
+      "revision_count": 0,
+      "missing_evidence": []
+    },
+    {
+      "case_id": "PUB-006",
+      "expected_decision": "NEEDS_REVIEW",
+      "predicted_decision": "NEEDS_REVIEW",
+      "correct": true,
+      "confidence": 0.95,
+      "validation_status": "FAIL",
+      "citation_count": 4,
+      "revision_count": 1,
+      "missing_evidence": [
+        "Evidence confirming that the hospital meets the policy's registration requirements",
+        "Evidence confirming medical necessity of the hospitalization"
+      ]
+    },
+    {
+      "case_id": "PUB-007",
+      "expected_decision": "ADMISSIBLE_WITH_LIMITS",
+      "predicted_decision": "ADMISSIBLE_WITH_LIMITS",
+      "correct": true,
+      "confidence": 1.0,
+      "validation_status": "PASS",
+      "citation_count": 6,
+      "revision_count": 0,
+      "missing_evidence": []
+    },
+    {
+      "case_id": "PUB-008",
+      "expected_decision": "NOT_ADMISSIBLE",
+      "predicted_decision": "NOT_ADMISSIBLE",
+      "correct": true,
+      "confidence": 1.0,
+      "validation_status": "PASS",
+      "citation_count": 1,
+      "revision_count": 0,
+      "missing_evidence": []
+    },
+    {
+      "case_id": "PUB-009",
+      "expected_decision": "ADMISSIBLE",
+      "predicted_decision": "ADMISSIBLE",
+      "correct": true,
+      "confidence": 1.0,
+      "validation_status": "PASS",
+      "citation_count": 2,
+      "revision_count": 0,
+      "missing_evidence": []
+    },
+    {
+      "case_id": "PUB-010",
+      "expected_decision": "ADMISSIBLE",
+      "predicted_decision": "ADMISSIBLE",
+      "correct": true,
+      "confidence": 1.0,
+      "validation_status": "PASS",
+      "citation_count": 3,
+      "revision_count": 0,
+      "missing_evidence": []
+    },
+    {
+      "case_id": "PUB-011",
+      "expected_decision": "NEEDS_REVIEW",
+      "predicted_decision": "NEEDS_REVIEW",
+      "correct": true,
+      "confidence": 0.95,
+      "validation_status": "PASS",
+      "citation_count": 1,
+      "revision_count": 0,
+      "missing_evidence": [
+        "Hospital registration certificate or documentation proving compliance with minimum criteria under the Clinical Establishments Act or policy definition.",
+        "Evidence confirming that the hospital meets the policy's registration requirements",
+        "Evidence confirming medical necessity of the hospitalization"
+      ]
+    },
+    {
+      "case_id": "PUB-012",
+      "expected_decision": "NOT_ADMISSIBLE",
+      "predicted_decision": "NOT_ADMISSIBLE",
+      "correct": true,
+      "confidence": 1.0,
+      "validation_status": "PASS",
+      "citation_count": 1,
+      "revision_count": 0,
+      "missing_evidence": []
+    }
+  ]
+}

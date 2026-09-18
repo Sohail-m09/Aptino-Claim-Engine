@@ -3,6 +3,8 @@ from typing import NotRequired, TypedDict
 from app.schemas.claim import ClaimCase
 from app.schemas.decision import (
     ApplicableLimit,
+    Citation,
+    DecisionDraft,
     Evidence,
     FinalDecision,
     Finding,
@@ -25,14 +27,22 @@ class ClaimState(TypedDict):
     # Coverage & Exclusion Agent
     coverage_findings: NotRequired[list[Finding]]
 
+    applicable_financial_rules: NotRequired[list[str]]
+
+    missing_evidence: NotRequired[list[str]]
+
     # Deterministic financial rules
     financial_limits: NotRequired[list[ApplicableLimit]]
 
     # Decision Agent
     decision: NotRequired[FinalDecision]
 
+    decision_draft: NotRequired[DecisionDraft]
+
     # Validation Agent
     validation: NotRequired[ValidationResult]
+
+    citations: NotRequired[list[Citation]]
 
     # Visible execution trace
     trace: NotRequired[list[TraceStep]]

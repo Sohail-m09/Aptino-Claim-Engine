@@ -1,0 +1,70 @@
+{
+  "summary": {
+    "total_cases": 5,
+    "correct_cases": 5,
+    "decision_accuracy": 1.0
+  },
+  "cases": [
+    {
+      "case_id": "CUSTOM-001",
+      "expected_decision": "ADMISSIBLE",
+      "predicted_decision": "ADMISSIBLE",
+      "correct": true,
+      "confidence": 1.0,
+      "validation_status": "PASS",
+      "citation_count": 4,
+      "revision_count": 0,
+      "missing_evidence": []
+    },
+    {
+      "case_id": "CUSTOM-002",
+      "expected_decision": "ADMISSIBLE_WITH_LIMITS",
+      "predicted_decision": "ADMISSIBLE_WITH_LIMITS",
+      "correct": true,
+      "confidence": 1.0,
+      "validation_status": "PASS",
+      "citation_count": 3,
+      "revision_count": 0,
+      "missing_evidence": []
+    },
+    {
+      "case_id": "CUSTOM-003",
+      "expected_decision": "NEEDS_REVIEW",
+      "predicted_decision": "NEEDS_REVIEW",
+      "correct": true,
+      "confidence": 0.95,
+      "validation_status": "PASS",
+      "citation_count": 1,
+      "revision_count": 0,
+      "missing_evidence": [
+        "Hospital registration certificate or documentation proving compliance with minimum criteria under the Clinical Establishments Act",
+        "Evidence confirming that the hospital meets the policy's registration requirements"
+      ]
+    },
+    {
+      "case_id": "CUSTOM-004",
+      "expected_decision": "NEEDS_REVIEW",
+      "predicted_decision": "NEEDS_REVIEW",
+      "correct": true,
+      "confidence": 0.95,
+      "validation_status": "PASS",
+      "citation_count": 1,
+      "revision_count": 0,
+      "missing_evidence": [
+        "medical_necessity_confirmation",
+        "Evidence confirming medical necessity of the hospitalization"
+      ]
+    },
+    {
+      "case_id": "CUSTOM-005",
+      "expected_decision": "NOT_ADMISSIBLE",
+      "predicted_decision": "NOT_ADMISSIBLE",
+      "correct": true,
+      "confidence": 1.0,
+      "validation_status": "PASS",
+      "citation_count": 1,
+      "revision_count": 0,
+      "missing_evidence": []
+    }
+  ]
+}
