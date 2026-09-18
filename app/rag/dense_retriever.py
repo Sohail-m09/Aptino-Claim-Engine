@@ -6,8 +6,18 @@ from app.rag.embeddings import get_embedding_model
 from functools import lru_cache
 
 
-CHROMA_PATH = Path("chroma_db")
-COLLECTION_NAME = "aptino_policy"
+''' CHROMA_PATH = Path("chroma_db")
+COLLECTION_NAME = "aptino_policy" '''
+from app.core.config import settings
+
+
+if settings.embedding_provider.lower() == "google":
+    CHROMA_PATH = Path("chroma_db_google")
+    COLLECTION_NAME = "aptino_policy_google"
+else:
+    CHROMA_PATH = Path("chroma_db")
+    COLLECTION_NAME = "aptino_policy"
+
 
 
 def build_dense_index(

@@ -12,6 +12,9 @@ class Settings(BaseSettings):
         "http://127.0.0.1:8000"
     )
 
+    embedding_provider: str = "local"
+    embedding_model: str = "gemini-embedding-2"
+
     model_config = SettingsConfigDict(
         env_file=".env",
         env_file_encoding="utf-8",
