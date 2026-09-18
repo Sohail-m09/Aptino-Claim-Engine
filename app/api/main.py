@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException
 
 from app.schemas.claim import ClaimCase
 from app.schemas.decision import FinalDecision
-from app.workflow.graph import claim_graph
+# from app.workflow.graph import claim_graph
 
 
 app = FastAPI(
@@ -32,6 +32,7 @@ def analyze_claim(
 ):
 
     try:
+        from app.workflow.graph import claim_graph
         initial_state = {
             "case": claim,
             "trace": [],
