@@ -1,7 +1,7 @@
 from flashrank import Ranker, RerankRequest
 
 
-RERANK_MODEL = "ms-marco-MiniLM-L-12-v2"
+RERANK_MODEL = "ms-marco-TinyBERT-L-2-v2"
 
 
 ranker = Ranker(
