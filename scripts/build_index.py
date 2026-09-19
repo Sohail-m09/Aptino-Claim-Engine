@@ -2,16 +2,18 @@ from app.rag.dense_retriever import build_dense_index
 
 
 def main():
-    print("Building dense policy index...")
+    print("Building policy dense index...")
 
     vector_store = build_dense_index(
         reset=True
     )
 
-    count = vector_store._collection.count()
+    result = vector_store.get()
 
-    print("Dense index built successfully")
-    print(f"Indexed chunks: {count}")
+    print(
+        f"Index created successfully "
+        f"with {len(result.get('ids', []))} chunks."
+    )
 
 
 if __name__ == "__main__":
